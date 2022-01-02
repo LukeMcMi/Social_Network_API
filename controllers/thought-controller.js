@@ -1,4 +1,3 @@
-const { process_params } = require('express/lib/router');
 const { Thought } = require('../models/Thought');
 const User = require('../models/User');
 
