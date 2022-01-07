@@ -60,7 +60,7 @@ const userController = {
         User.findOneAndUpdate({ _id: params.id }, { $addToSet: { friends: params.friendId } }, { runValidators: true })
             .then(dbUserData => {
                 if (!dbUserData) {
-                    res.status(404).json({ message: 'No user found with this id!' });
+                    res.status(404).json({ message: 'No User found with this ID' });
                     return;
                 }
                 res.json(dbUserData);
